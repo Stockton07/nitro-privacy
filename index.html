@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f8ff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#070b12" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Privacy Policy for nitro - Work and Payroll.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230a84ff'/%3E%3Cpath d='M32 15v5m12.02 1.98-3.54 3.54M49 34h-5M20 34h-5m8.98-12.02 3.54 3.54' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M32 24a14 14 0 1 1-12.12 7' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M32 34l7-5' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <title>Privacy Policy · nitro</title>
+  <style>
+    :root {
+      --page: #f4f8ff;
+      --page-glow: rgba(10, 132, 255, .18);
+      --surface: rgba(255, 255, 255, .78);
+      --surface-border: rgba(255, 255, 255, .88);
+      --text: #101828;
+      --secondary: #536175;
+      --rule: rgba(16, 24, 40, .10);
+      --blue: #087df1;
+      --green: #22a65a;
+      --shadow: 0 24px 70px rgba(42, 67, 105, .12);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #070b12;
+        --page-glow: rgba(31, 142, 255, .24);
+        --surface: rgba(19, 26, 38, .82);
+        --surface-border: rgba(255, 255, 255, .09);
+        --text: #f7f9fc;
+        --secondary: #aab6c7;
+        --rule: rgba(255, 255, 255, .09);
+        --blue: #46a7ff;
+        --green: #35c66f;
+        --shadow: 0 28px 80px rgba(0, 0, 0, .36);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% -12rem, var(--page-glow), transparent 34rem),
+        var(--page);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      font-size: 17px;
+      line-height: 1.58;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--blue); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    .shell {
+      width: min(100% - 32px, 820px);
+      margin: 0 auto;
+      padding: 72px 0 48px;
+    }
+
+    header {
+      display: grid;
+      justify-items: center;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .app-icon {
+      display: grid;
+      place-items: center;
+      width: 78px;
+      height: 78px;
+      margin-bottom: 22px;
+      color: white;
+      background: linear-gradient(145deg, #36b6ff, #087df1 62%, #0069d7);
+      border: 1px solid rgba(255, 255, 255, .5);
+      border-radius: 22px;
+      box-shadow: 0 16px 32px rgba(10, 132, 255, .25), inset 0 1px rgba(255, 255, 255, .4);
+    }
+
+    .app-icon svg { width: 47px; height: 47px; }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 7vw, 3.5rem);
+      line-height: 1.04;
+      letter-spacing: -.045em;
+    }
+
+    .product {
+      margin: 12px 0 0;
+      color: var(--secondary);
+      font-weight: 600;
+      letter-spacing: -.01em;
+    }
+
+    .effective {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      padding: 7px 12px;
+      color: var(--secondary);
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 999px;
+      font-size: .82rem;
+      font-weight: 650;
+      box-shadow: 0 8px 22px rgba(31, 51, 82, .07);
+      backdrop-filter: blur(18px) saturate(140%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+    }
+
+    .effective::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+    }
+
+    main {
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(24px) saturate(145%);
+      -webkit-backdrop-filter: blur(24px) saturate(145%);
+    }
+
+    section { padding: 32px 38px; }
+    section + section { border-top: 1px solid var(--rule); }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.26rem;
+      line-height: 1.25;
+      letter-spacing: -.022em;
+    }
+
+    p { margin: 0; }
+    p + p, p + ul, ul + p { margin-top: 14px; }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 1.3em;
+    }
+
+    li { padding-left: .2em; }
+    li + li { margin-top: 8px; }
+
+    .summary {
+      font-size: 1.06rem;
+      font-weight: 560;
+      letter-spacing: -.01em;
+    }
+
+    .quiet { color: var(--secondary); }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      margin-top: 16px;
+      padding: 0 16px;
+      color: white;
+      background: var(--blue);
+      border-radius: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 9px 20px rgba(10, 132, 255, .22);
+    }
+
+    footer {
+      padding: 26px 12px 0;
+      color: var(--secondary);
+      text-align: center;
+      font-size: .84rem;
+    }
+
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 20px, 820px); padding-top: 42px; }
+      header { margin-bottom: 26px; }
+      main { border-radius: 24px; }
+      section { padding: 26px 22px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="app-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M32 12v7M48 18l-5 5M54 34h-7M17 34h-7M21 18l5 5" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <path d="M32 20a17 17 0 1 1-14.5 8.1" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <path d="M32 34l9-6" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="product">nitro - Work and Payroll</p>
+      <div class="effective">Effective September 16, 2026</div>
+    </header>
+
+    <main>
+      <section>
+        <p class="summary">Nitro is local-first. You can use its core time, mileage, expense, and payroll tools without signing in. Cloud sync is optional and begins only after you choose to connect an account.</p>
+      </section>
+
+      <section>
+        <h2>Information Nitro handles</h2>
+        <p>When you use Nitro locally, your records stay on your device. If you enable cloud sync, Nitro sends the following information to its cloud service so your records can remain available across your devices:</p>
+        <ul>
+          <li>Account information, including your email address, display name, and account identifier.</li>
+          <li>Work sessions, including clock-in and clock-out times, pay rate, work category, time zone, and notes you enter.</li>
+          <li>Mileage records, including dates, distance, reimbursement rates and amounts, purpose, and notes.</li>
+          <li>Expense records, including dates, amounts, categories, descriptions, notes, and any receipt files you attach.</li>
+          <li>Shared work preferences, including your expected workday, hourly pay rate, and mileage rate.</li>
+        </ul>
+        <p>Time-gap records, payroll period status, Siri and delivery choices, appearance settings, and payroll recipients remain on your device in the current version of Nitro.</p>
+      </section>
+
+      <section>
+        <h2>How information is used</h2>
+        <p>Nitro uses this information only to provide app functionality: authenticating your account, saving and syncing your records, resolving sync conflicts, preparing payroll summaries, and restoring your information on another signed-in device.</p>
+      </section>
+
+      <section>
+        <h2>Cloud service</h2>
+        <p>Nitro uses Supabase to provide account authentication, database storage, file storage, and live synchronization. Cloud records are associated with your account so that only authorized access can retrieve them. Supabase processes information on Nitro’s behalf under its own <a href="https://supabase.com/privacy" rel="noopener noreferrer">privacy policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>Photos, files, and contacts</h2>
+        <p>Nitro accesses the camera or photo picker only when you choose to attach a receipt. Attached receipt files sync only when cloud sync is connected.</p>
+        <p>Nitro’s contact picker lets you select a payroll recipient. Nitro does not upload your address book or contact selection to its cloud service. Apple’s Messages and Mail interfaces handle the delivery you approve.</p>
+      </section>
+
+      <section>
+        <h2>No tracking or advertising</h2>
+        <p>Nitro does not contain advertising, sell personal information, use advertising identifiers, or track your activity across other companies’ apps or websites. Nitro does not use third-party analytics SDKs.</p>
+      </section>
+
+      <section>
+        <h2>Security</h2>
+        <p>Nitro uses encrypted network connections, system-protected credential storage, account-scoped database rules, and protected on-device storage. No method of electronic storage or transmission is perfectly secure, but Nitro is designed to limit access to the account and devices you authorize.</p>
+      </section>
+
+      <section>
+        <h2>Your choices and deletion</h2>
+        <p>You may use Nitro without cloud sync, disconnect a device from sync, or remove local data from within the app. Deleting a local record while sync is connected requests the corresponding cloud deletion. You may also request deletion of your cloud account and associated data by contacting Nitro support.</p>
+        <p>Operational deletion records or backups may remain for a limited period where reasonably necessary for security, recovery, or legal obligations.</p>
+      </section>
+
+      <section>
+        <h2>Children’s privacy</h2>
+        <p>Nitro is a work and payroll utility and is not directed to children under 13. Nitro does not knowingly collect personal information from children under 13.</p>
+      </section>
+
+      <section>
+        <h2>Policy updates</h2>
+        <p>If Nitro’s data practices materially change, this policy will be updated and its effective date will be revised. App Store privacy disclosures will also be updated when required.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>For privacy questions or account-deletion requests, contact Nitro at the email address below.</p>
+        <a class="contact" href="mailto:stockton@nelson-it.com">stockton@nelson-it.com</a>
+      </section>
+    </main>
+
+    <footer>© 2026 Nitro. All rights reserved.</footer>
+  </div>
+</body>
+</html>
