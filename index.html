@@ -209,7 +209,7 @@
       </div>
       <h1>Privacy Policy</h1>
       <p class="product">nitro - Work and Payroll</p>
-      <div class="effective">Effective October 11, 2026</div>
+      <div class="effective">Effective October 16, 2026</div>
     </header>
 
     <main>
@@ -220,6 +220,7 @@
       <section>
         <h2>Information Nitro handles</h2>
         <p>Without a cloud account, Nitro saves your records on your device rather than uploading them to Nitro’s cloud service. A paired Apple Watch exchanges supported records and preferences with your iPhone. You may also choose to export or share records using your device’s sharing tools.</p>
+        <p>Signing in sends the account information needed to authenticate you, even before you connect record sync. It does not by itself upload your on-device work records. Signed-in apps also report limited operational information: the app and build version, operating-system major version, and a randomly generated installation identifier associated with your account. This helps Nitro support compatible versions. It is normally reported once a day or after an app update, not through continuous device tracking. It does not include a hardware serial number, device name, advertising identifier, location, work records, or password.</p>
         <p>If you enable cloud sync, Nitro sends the following information to its cloud service so your records can remain available across your signed-in devices:</p>
         <ul>
           <li>Account information, including your email address, display name, and account identifier.</li>
@@ -233,7 +234,7 @@
           <li>Workplace review records, including decisions, correction reasons, before-and-after changes, review requests, payroll approval/submission/payment-status snapshots, and activity read or acknowledgement status.</li>
           <li>Workplace invitations, including the invited email address, assigned role, expiry, acceptance status, and a single-use invitation code.</li>
         </ul>
-        <p>Siri and delivery choices, appearance settings, and payroll recipients remain on your device. A server-managed planning profile may enable an estimated net-pay calculation for selected accounts using supplied approximate age, city/state, and filing status. Other accounts show gross wages and reimbursements. Estimates are not payslips or tax advice; Nitro does not look up your personal tax details on the internet.</p>
+        <p>Siri and delivery choices, appearance settings, and payroll recipients remain on your device. Workplace payroll download preferences, including whether to include disabled employees and gross wages, are stored with workplace settings so authorized administrators see consistent defaults. A server-managed planning profile may enable an estimated net-pay calculation for selected accounts using supplied approximate age, city/state, and filing status. Other accounts show gross wages and reimbursements. Estimates are not payslips or tax advice; Nitro does not look up your personal tax details on the internet.</p>
       </section>
 
       <section>
@@ -244,6 +245,7 @@
       <section>
         <h2>Cloud service</h2>
         <p>Nitro uses Supabase to provide account authentication, database storage, file storage, and live synchronization. Cloud records are associated with your account so that only authorized access can retrieve them. Supabase processes information on Nitro’s behalf under its own <a href="https://supabase.com/privacy" rel="noopener noreferrer">privacy policy</a>.</p>
+        <p>Authentication emails are delivered through Resend. These include verification and password-recovery codes. Your email address and the message content are processed for delivery and security; Nitro does not use these messages for advertising. Codes expire, are checked by the server, and should never be shared. Read <a href="https://resend.com/legal/privacy-policy" rel="noopener noreferrer">Resend’s privacy policy</a> for its practices.</p>
       </section>
 
       <section>
@@ -259,8 +261,10 @@
 
       <section>
         <h2>Licenses and payments</h2>
-        <p>Nitro currently maintains account and organization access records, including complimentary access. Paid personal cloud checkout and new personal cloud-account creation are not enabled in the current app. Nitro does not collect payment-card or bank-account details for these access records.</p>
-        <p>If paid cloud purchases are introduced, this policy and the applicable store privacy disclosures will be updated to explain the purchase information used to verify and maintain access.</p>
+        <p>Nitro maintains account and organization access records, including complimentary beta and lifetime access. A personal access code applies only to personal cloud access, not workplace membership or administrator permissions. Personal signup and password recovery use server-verified email codes. Beta availability is controlled by the server, including for older app versions.</p>
+        <p>Where offered, workplace subscriptions are processed by Stripe. Nitro keeps the organization’s Stripe customer, checkout, subscription and invoice-event references, seat quantity, plan interval, payment/access status, paid-through date, scheduled changes and cancellation status. This is used to verify access and avoid duplicate billing. Nitro does not receive full payment-card numbers or card security codes; payment details are entered on Stripe-hosted pages. See <a href="https://stripe.com/privacy" rel="noopener noreferrer">Stripe’s privacy policy</a>.</p>
+        <p>Only an authenticated workplace owner can request billing changes. Payment-method updates and invoices use a short-lived authenticated Stripe portal. Seat and renewal changes are confirmed in Nitro and checked against assigned members and reserved invitations. Cancelling stops renewal and does not remove access already paid for before its end date. Complimentary access does not require a paid subscription while the grant remains valid.</p>
+        <p>Personal app-store purchasing is separate and is available only when its products and server verification are enabled. Purchases made through an app store are managed with that store. Purchase options can differ by distribution channel and storefront. A successful browser return or an on-device payment result does not by itself grant cloud access.</p>
       </section>
 
       <section>
@@ -281,8 +285,11 @@
 
       <section>
         <h2>Your choices and deletion</h2>
-        <p>You may use Nitro without cloud sync, disconnect a device from sync, or remove local data from within the app. Deleting a local record while sync is connected requests the corresponding cloud deletion. You may also request deletion of your cloud account and associated data by contacting Nitro support.</p>
-        <p>Cloud information is retained while needed to provide the service and handle applicable support, security, recovery, or recordkeeping obligations. Deletion markers, administrative audit records, or backup copies may remain after removal from active app views. Signing out or ending a license is not an account-deletion request. Contact support about the records and retention that apply to your account.</p>
+        <p>You may use Nitro without cloud sync, disconnect a device, sign out, or purge this device’s local records. Purging and disconnecting also signs you out; it is not a request to erase the workplace’s cloud records. Deleting a supported record while sync is connected requests its corresponding cloud deletion, subject to workplace review, payroll locks, and retention protections.</p>
+        <p>Account deletion is available through Account &amp; recovery where enabled, or through support. A deletion request normally has a 14-day recovery window. To recover, sign in to the original account and explicitly cancel deletion before the displayed deadline. Creating a different account does not cancel the original request. After the window, the login and eligible personal records are scheduled for permanent removal. Owners must transfer ownership or close their workplace first.</p>
+        <p>Removing a workplace member is separate from deleting that person’s global login. Authorized administrators can restore a removed member during the displayed 14-day recovery window, subject to an available seat. Removing membership does not delete unrelated personal accounts or another workplace’s records.</p>
+        <p>A known cloud-license expiry or workplace closure can start a 120-day archive/export window. Administrators should download the full record archive and original receipt files before the server-displayed deadline. Employer records, approved payroll snapshots, audit history, deletion markers, security records and backups may be retained separately where preservation or recordkeeping holds apply; a login-deletion request does not automatically erase these employer records. Some legacy or protected workplaces require operator-assisted retention handling. Contact support about the exact retention and available recovery for your account.</p>
+        <p>Operational installation/version entries are removed after 120 days without a report, in bounded cleanup batches, and when their associated login is permanently removed. Nitro does not use them to grant access or authorize a device. Signing out or ending a license is not an account-deletion request.</p>
       </section>
 
       <section>
@@ -298,7 +305,7 @@
       <section>
         <h2>Contact</h2>
         <p>For privacy questions or account-deletion requests, contact Nitro at the email address below.</p>
-        <a class="contact" href="mailto:stockton@nelson-it.com">stockton@nelson-it.com</a>
+        <a class="contact" href="mailto:support@nitrotrack.app">support@nitrotrack.app</a>
       </section>
     </main>
 
