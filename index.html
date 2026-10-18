@@ -7,9 +7,11 @@
   <meta name="theme-color" content="#f4f8ff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#070b12" media="(prefers-color-scheme: dark)">
   <meta name="description" content="Privacy Policy for nitro - Work and Payroll.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230a84ff'/%3E%3Cpath d='M32 15v5m12.02 1.98-3.54 3.54M49 34h-5M20 34h-5m8.98-12.02 3.54 3.54' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M32 24a14 14 0 1 1-12.12 7' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M32 34l7-5' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="nitro-official-light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="nitro-official-dark.png" media="(prefers-color-scheme: dark)">
   <title>Privacy Policy · nitro</title>
   <style>
+    @font-face {font-family:Nitro;src:url(space-grotesk.ttf) format('truetype');font-weight:300 700;font-display:swap}
     :root {
       --page: #f4f8ff;
       --page-glow: rgba(10, 132, 255, .18);
@@ -49,7 +51,7 @@
       background:
         radial-gradient(circle at 50% -12rem, var(--page-glow), transparent 34rem),
         var(--page);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      font-family: Nitro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
       font-size: 17px;
       line-height: 1.58;
       -webkit-font-smoothing: antialiased;
@@ -84,7 +86,7 @@
       box-shadow: 0 16px 32px rgba(10, 132, 255, .25), inset 0 1px rgba(255, 255, 255, .4);
     }
 
-    .app-icon svg { width: 47px; height: 47px; }
+    .app-icon {background:none;border:0;box-shadow:none}.app-icon img{width:78px;height:78px;display:block}
 
     h1 {
       margin: 0;
@@ -200,21 +202,20 @@
 <body>
   <div class="shell">
     <header>
-      <div class="app-icon" aria-hidden="true">
-        <svg viewBox="0 0 64 64" fill="none">
-          <path d="M32 12v7M48 18l-5 5M54 34h-7M17 34h-7M21 18l5 5" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-          <path d="M32 20a17 17 0 1 1-14.5 8.1" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-          <path d="M32 34l9-6" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-      </div>
+      <picture class="app-icon"><source srcset="nitro-official-dark.png" media="(prefers-color-scheme: dark)"><img src="nitro-official-light.png" width="78" height="78" alt="Nitro"></picture>
       <h1>Privacy Policy</h1>
-      <p class="product">nitro - Work and Payroll</p>
-      <div class="effective">Effective October 16, 2026</div>
+      <p class="product">Nitro: Time, Expenses, Mileage</p>
+      <div class="effective">Effective October 18, 2026</div>
     </header>
 
     <main>
       <section>
         <p class="summary">Nitro is local-first. You can use its core time, mileage, expense, and payroll tools without signing in. Cloud sync is optional and begins only after you choose to connect an account.</p>
+      </section>
+
+      <section>
+        <h2>Who provides Nitro</h2>
+        <p>Nitro is a software product provided by Stockton Norris, an individual operating in Utah, United States. Nitro is not a separate company or a registered LLC. The initial service is intended for users in the United States. Contact: <a href="mailto:support@nitrotrack.app">support@nitrotrack.app</a>.</p>
       </section>
 
       <section>
@@ -260,8 +261,16 @@
       </section>
 
       <section>
+        <h2>Support and browser tools</h2>
+        <p>When you contact support, we process the name, email address, platform/version, topic and message you submit to respond and investigate. Workplace owners and administrators can create support tickets, optionally associate an employee in their own organization, and view status and messages. An employee association does not automatically attach that employee’s payroll, work records or receipts. Authorized workplace administrators and Nitro support operators can read the ticket conversation.</p>
+        <p>Support tickets and messages are stored with the service; Resend may deliver supplementary notifications containing support-message content and a ticket reference. Do not include passwords, email codes, payment-card details or unnecessary private employee information. Support and security records may be retained when needed to resolve requests, prevent abuse or meet applicable obligations; account deletion does not necessarily delete an employer’s support history. Contact support about correction or deletion.</p>
+        <p>When browser tracking is offered, browser pages request the records needed for the open view. Confirmed work history is not intentionally maintained as a permanent full browser replica. Unsent edits and selected pending receipt files can remain in that browser until synchronized or explicitly removed. Clearing site data can discard unsent changes; signing out does not itself erase them. Browser sign-in uses a protected session cookie; appearance preferences may be stored locally. Public support forms use Cloudflare Turnstile and limited request information to prevent abuse.</p>
+      </section>
+
+      <section>
         <h2>Licenses and payments</h2>
         <p>Nitro maintains account and organization access records, including complimentary beta and lifetime access. A personal access code applies only to personal cloud access, not workplace membership or administrator permissions. Personal signup and password recovery use server-verified email codes. Beta availability is controlled by the server, including for older app versions.</p>
+        <p>The launch offer, when enrollment opens, provides three calendar months of personal cloud sync or Workplace access for up to 30 total active people, including owners and administrators. Eligible signup must begin before February 1, 2027 at midnight Mountain Time. Signup displays the exact server-confirmed expiration. We keep offer version, acceptance time and start/end dates to administer access. Future pricing has not been determined. No card or automatic payment is created by this offer. Continuing cloud service afterward requires a separate voluntary paid subscription if offered; local-only use remains available, subject to workplace archive and record protections. Existing personal beta and lifetime grants follow their own terms. See the <a href="launch-terms.html">launch offer terms</a>.</p>
         <p>Where offered, workplace subscriptions are processed by Stripe. Nitro keeps the organization’s Stripe customer, checkout, subscription and invoice-event references, seat quantity, plan interval, payment/access status, paid-through date, scheduled changes and cancellation status. This is used to verify access and avoid duplicate billing. Nitro does not receive full payment-card numbers or card security codes; payment details are entered on Stripe-hosted pages. See <a href="https://stripe.com/privacy" rel="noopener noreferrer">Stripe’s privacy policy</a>.</p>
         <p>Only an authenticated workplace owner can request billing changes. Payment-method updates and invoices use a short-lived authenticated Stripe portal. Seat and renewal changes are confirmed in Nitro and checked against assigned members and reserved invitations. Cancelling stops renewal and does not remove access already paid for before its end date. Complimentary access does not require a paid subscription while the grant remains valid.</p>
         <p>Personal app-store purchasing is separate and is available only when its products and server verification are enabled. Purchases made through an app store are managed with that store. Purchase options can differ by distribution channel and storefront. A successful browser return or an on-device payment result does not by itself grant cloud access.</p>
